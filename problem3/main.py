@@ -152,4 +152,12 @@ def run_until_trapped(start):
     return sequence
 
 
-print(f"{run_until_trapped('room1') = }")
+execution = run_until_trapped('room1')
+
+answer = f"""
+Problem 3:
+    Rooms Before Trapped: {len(execution) - 1}
+    Sequence Of Rooms: {execution}
+"""
+
+print(answer)
