@@ -4,11 +4,13 @@ The code implementing problems #1-4 for the topic Markov Chains within Project 2
 
 Currently #3 is finished.
 
+
 ## Requirements
 
 Be sure you have python 3 installed. Once you have python 3, install pipenv.
 
 This project was initially developed on a linux machine; if we have the time we might get it working on Windows, and it should already work on Mac.
+
 
 ## Running The App
 
@@ -40,4 +42,26 @@ To run each problem, sequentially run:
 
 ```bash
 pipenv run python ./problem3/main.py
+```
+
+
+## Example Output
+
+Upon executing `make runall` the following is produced:
+
+```
+$ make runall
+Running problem 3...
+
+Problem 3:
+    Rooms Before Trapped: 3
+    Sequence Of Rooms: ['room1', 'room2', 'room1', 'trapped']
+
+$ make runall
+Running problem 3...
+
+Problem 3:
+    Rooms Before Trapped: 39
+    Sequence Of Rooms: ['room1', 'room3', 'room6', 'room3', 'room5', 'room3', 'room1', 'room3', 'room6', 'room3', 'room6', 'room7', 'room9', 'room7', 'room6', 'room3', 'room5', 'room3', 'room5', 'room3', 'room1', 'room2', 'room1', 'room3', 'room4', 'room3', 'room6', 'room7', 'room9', 'room7', 'room6', 'room3', 'room1', 'room3', 'room1', 'room2', 'room1', 'room2', 'room1', 'trapped']
+
 ```
