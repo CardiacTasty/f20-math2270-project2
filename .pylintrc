@@ -1,0 +1,3 @@
+# This file exists so VSCode configures itself properly.
+[MESSAGES CONTROL]
+disable=logging-format-interpolation, logging-fstring-interpolation, too-few-public-methods, missing-module-docstring, global-statement
