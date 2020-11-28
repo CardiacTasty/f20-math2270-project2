@@ -2,6 +2,8 @@
 
 The code implementing problems #1-4 for the topic Markov Chains within Project 2.
 
+Currently #3 is finished.
+
 ## Requirements
 
 Be sure you have python 3 installed. Once you have python 3, install pipenv.
