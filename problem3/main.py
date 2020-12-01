@@ -1,6 +1,6 @@
+from collections import Counter, defaultdict
 import numpy as np
 import matplotlib.pyplot as plt
-from collections import Counter, defaultdict
 
 
 MOUSE_PROB = {
@@ -131,7 +131,7 @@ MOUSE_ROOMS = list(MOUSE_PROB.keys())
 
 def next_room(current):
     """
-    Given the probabilities declared in PROB, determine which room the mouse next visits.
+    Given the probabilities declared in MOUSE_PROB, determine which room the mouse next visits.
     """
 
     return np.random.choice(MOUSE_ROOMS, p=list(MOUSE_PROB[current].values()))

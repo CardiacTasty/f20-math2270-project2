@@ -2,8 +2,6 @@
 
 The code implementing problems #3-4 for the topic Markov Chains within Project 2.
 
-Currently #3 is finished.
-
 
 ## Requirements
 
@@ -50,18 +48,16 @@ pipenv run python ./problem3/main.py
 Upon executing `make runall` the following is produced:
 
 ```
-$ make runall
 Running problem 3...
 
-Problem 3:
-    Rooms Before Trapped: 3
-    Sequence Of Rooms: ['room1', 'room2', 'room1', 'trapped']
+    Problem 3:
+        Rooms Before Trapped: 179
+        Sequence Of Rooms: ['room1', 'room3', 'room4', 'room3', 'room4', 'room3', 'room1', 'room3', 'room6', 'room3', 'room5', 'room3', 'room6', 'room3', 'room5', 'room3', 'room4', 'room3', 'room4', 'room3', 'room4', 'room3', 'room4', 'room3', 'room5', 'room3', 'room4', 'room3', 'room1', 'room2', 'room1', 'room3', 'room6', 'room3', 'room1', 'room3', 'room4', 'room3', 'room4', 'room3', 'room4', 'room3', 'room6', 'room3', 'room6', 'room3', 'room6', 'room3', 'room4', 'room3', 'room5', 'room3', 'room6', 'room7', 'room9', 'room7', 'room8', 'room7', 'room8', 'room7', 'room8', 'room7', 'room8', 'room7', 'room8', 'room7', 'room9', 'room7', 'room6', 'room7', 'room8', 'room7', 'room6', 'room3', 'room1', 'room3', 'room5', 'room3', 'room1', 'room2', 'room1', 'room2', 'room1', 'room3', 'room6', 'room3', 'room5', 'room3', 'room4', 'room3', 'room5', 'room3', 'room1', 'room2', 'room1', 'room3', 'room1', 'room2', 'room1', 'room3', 'room4', 'room3', 'room5', 'room3', 'room4', 'room3', 'room1', 'room3', 'room5', 'room3', 'room6', 'room7', 'room6', 'room7', 'room9', 'room7', 'room9', 'room7', 'room6', 'room3', 'room6', 'room3', 'room5', 'room3', 'room6', 'room7', 'room9', 'room7', 'room8', 'room7', 'room9', 'room7', 'room6', 'room7', 'room6', 'room7', 'room9', 'room7', 'room6', 'room3', 'room5', 'room3', 'room5', 'room3', 'room4', 'room3', 'room4', 'room3', 'room5', 'room3', 'room6', 'room3', 'room4', 'room3', 'room5', 'room3', 'room5', 'room3', 'room6', 'room3', 'room4', 'room3', 'room6', 'room3', 'room4', 'room3', 'room6', 'room3', 'room4', 'room3', 'room1', 'room3', 'room6', 'room3', 'room5', 'room3', 'room1', 'room2', 'room1', 'trapped']
+    
+Running problem 4...
 
-$ make runall
-Running problem 3...
+    Problem 4:
+        Sequence Of Weather Patterns: ['sunny', 'sunny', 'sunny', 'sunny', 'sunny', 'sunny', 'sunny', 'sunny', 'partcloudy', 'partcloudy', 'cloudy', 'snowing', 'cloudy', 'cloudy', 'cloudy', 'snowing', 'cloudy', 'sunny', 'sunny', 'sunny', 'sunny', 'sunny', 'sunny', 'sunny', 'sunny', 'sunny', 'partcloudy', 'sunny', 'sunny', 'sunny', 'sunny']
 
-Problem 3:
-    Rooms Before Trapped: 39
-    Sequence Of Rooms: ['room1', 'room3', 'room6', 'room3', 'room5', 'room3', 'room1', 'room3', 'room6', 'room3', 'room6', 'room7', 'room9', 'room7', 'room6', 'room3', 'room5', 'room3', 'room5', 'room3', 'room1', 'room2', 'room1', 'room3', 'room4', 'room3', 'room6', 'room7', 'room9', 'room7', 'room6', 'room3', 'room1', 'room3', 'room1', 'room2', 'room1', 'room2', 'room1', 'trapped']
 
 ```

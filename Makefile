@@ -11,7 +11,12 @@ run3:
 	@pipenv run python ./problem3/main.py
 
 
-runall: run3
+run4:
+	@echo -e "${GREEN}Running problem 4...${RESET}"
+	@pipenv run python ./problem4/main.py
+
+
+runall: run3 run4
 
 
 lint: guard-against-PIPENV_ACTIVE
