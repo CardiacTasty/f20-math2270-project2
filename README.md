@@ -1,6 +1,6 @@
 # f20-math2270-project2
 
-The code implementing problems #1-4 for the topic Markov Chains within Project 2.
+The code implementing problems #3-4 for the topic Markov Chains within Project 2.
 
 Currently #3 is finished.
 

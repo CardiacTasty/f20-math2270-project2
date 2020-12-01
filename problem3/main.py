@@ -1,7 +1,9 @@
 import numpy as np
+import matplotlib.pyplot as plt
+from collections import Counter, defaultdict
 
 
-PROB = {
+MOUSE_PROB = {
     "room1": {
         "room1": 0,
         "room2": 0.45,
@@ -124,15 +126,15 @@ PROB = {
     },
 }
 
-ROOMS = list(PROB.keys())
+MOUSE_ROOMS = list(MOUSE_PROB.keys())
 
 
 def next_room(current):
     """
-    Given the probabilities declared in PROBS, determine which room the mouse next visits.
+    Given the probabilities declared in PROB, determine which room the mouse next visits.
     """
 
-    return np.random.choice(ROOMS, p=list(PROB[current].values()))
+    return np.random.choice(MOUSE_ROOMS, p=list(MOUSE_PROB[current].values()))
 
 
 def run_until_trapped(start):
@@ -152,12 +154,46 @@ def run_until_trapped(start):
     return sequence
 
 
-execution = run_until_trapped('room1')
+def generate_plot(runs):
+    """
+    Generate a plot given some number of executions.
+    """
 
-answer = f"""
-Problem 3:
-    Rooms Before Trapped: {len(execution) - 1}
-    Sequence Of Rooms: {execution}
-"""
+    total = defaultdict(int)
+    for _ in range(runs):
+        counts = Counter(run_until_trapped("room1"))
+        for room in MOUSE_ROOMS:
+            total[room] += counts.get(room, 0)
 
-print(answer)
+    values = [total[x] for x in MOUSE_ROOMS]
+
+    _ = plt.figure(figsize=(10, 5))
+    plt.bar(MOUSE_ROOMS, values, label="Rooms")
+    plt.title(f"{runs} Trials")
+    plt.xlabel("Visited Rooms")
+    plt.ylabel("No. of times visited")
+
+    for i, val in enumerate(values):
+        plt.text(i - 0.25, val, str(val))
+
+    plt.savefig("genfig-3.png")
+
+
+def run_single():
+    """
+    Produce the output for a single run through.
+    """
+
+    execution = run_until_trapped("room1")
+
+    answer = f"""
+    Problem 3:
+        Rooms Before Trapped: {len(execution) - 1}
+        Sequence Of Rooms: {execution}
+    """
+
+    print(answer)
+
+
+run_single()
+generate_plot(1000)
