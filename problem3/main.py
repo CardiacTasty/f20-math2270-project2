@@ -179,7 +179,7 @@ def generate_plot(runs):
     plt.savefig("genfig-3.png")
 
 
-def run_single():
+def output_single():
     """
     Produce the output for a single run through.
     """
@@ -195,5 +195,5 @@ def run_single():
     print(answer)
 
 
-run_single()
+output_single()
 generate_plot(1000)

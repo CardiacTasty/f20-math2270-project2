@@ -33,7 +33,7 @@ WEATHER_PROB = {
 WEATHER_PAT = list(WEATHER_PROB.keys())
 
 
-def next_room(current):
+def next_pattern(current):
     """
     Given the probabilities declared in WEATHER_PAT, determine which room the mouse next visits.
     """
@@ -41,7 +41,7 @@ def next_room(current):
     return np.random.choice(WEATHER_PAT, p=list(WEATHER_PROB[current].values()))
 
 
-def run_until(start, transitions=30):
+def run_from_start(start, transitions=30):
     """
     Let the weather shift for the number of transitions.
 
@@ -52,7 +52,7 @@ def run_until(start, transitions=30):
 
     current = start
     for _ in range(transitions):
-        current = next_room(current)
+        current = next_pattern(current)
         sequence.append(current)
 
     return sequence
@@ -65,7 +65,7 @@ def generate_plot(runs):
 
     total = defaultdict(int)
     for _ in range(runs):
-        counts = Counter(run_until("sunny"))
+        counts = Counter(run_from_start("sunny"))
         for pattern in WEATHER_PAT:
             total[pattern] += counts.get(pattern, 0)
 
@@ -83,12 +83,12 @@ def generate_plot(runs):
     plt.savefig("genfig-4.png")
 
 
-def run_single():
+def output_single():
     """
     Produce the output for a single run through.
     """
 
-    execution = run_until("sunny")
+    execution = run_from_start("sunny")
 
     answer = f"""
     Problem 4:
@@ -98,5 +98,5 @@ def run_single():
     print(answer)
 
 
-run_single()
+output_single()
 generate_plot(1000)
