@@ -35,7 +35,7 @@ WEATHER_PAT = list(WEATHER_PROB.keys())
 
 def next_pattern(current):
     """
-    Given the probabilities declared in WEATHER_PAT, determine which room the mouse next visits.
+    Given the probabilities declared in WEATHER_PAT, determine which weather pattern occurs next.
     """
 
     return np.random.choice(WEATHER_PAT, p=list(WEATHER_PROB[current].values()))

@@ -51,13 +51,11 @@ Upon executing `make runall` the following is produced:
 Running problem 3...
 
     Problem 3:
-        Rooms Before Trapped: 179
-        Sequence Of Rooms: ['room1', 'room3', 'room4', 'room3', 'room4', 'room3', 'room1', 'room3', 'room6', 'room3', 'room5', 'room3', 'room6', 'room3', 'room5', 'room3', 'room4', 'room3', 'room4', 'room3', 'room4', 'room3', 'room4', 'room3', 'room5', 'room3', 'room4', 'room3', 'room1', 'room2', 'room1', 'room3', 'room6', 'room3', 'room1', 'room3', 'room4', 'room3', 'room4', 'room3', 'room4', 'room3', 'room6', 'room3', 'room6', 'room3', 'room6', 'room3', 'room4', 'room3', 'room5', 'room3', 'room6', 'room7', 'room9', 'room7', 'room8', 'room7', 'room8', 'room7', 'room8', 'room7', 'room8', 'room7', 'room8', 'room7', 'room9', 'room7', 'room6', 'room7', 'room8', 'room7', 'room6', 'room3', 'room1', 'room3', 'room5', 'room3', 'room1', 'room2', 'room1', 'room2', 'room1', 'room3', 'room6', 'room3', 'room5', 'room3', 'room4', 'room3', 'room5', 'room3', 'room1', 'room2', 'room1', 'room3', 'room1', 'room2', 'room1', 'room3', 'room4', 'room3', 'room5', 'room3', 'room4', 'room3', 'room1', 'room3', 'room5', 'room3', 'room6', 'room7', 'room6', 'room7', 'room9', 'room7', 'room9', 'room7', 'room6', 'room3', 'room6', 'room3', 'room5', 'room3', 'room6', 'room7', 'room9', 'room7', 'room8', 'room7', 'room9', 'room7', 'room6', 'room7', 'room6', 'room7', 'room9', 'room7', 'room6', 'room3', 'room5', 'room3', 'room5', 'room3', 'room4', 'room3', 'room4', 'room3', 'room5', 'room3', 'room6', 'room3', 'room4', 'room3', 'room5', 'room3', 'room5', 'room3', 'room6', 'room3', 'room4', 'room3', 'room6', 'room3', 'room4', 'room3', 'room6', 'room3', 'room4', 'room3', 'room1', 'room3', 'room6', 'room3', 'room5', 'room3', 'room1', 'room2', 'room1', 'trapped']
+        Rooms Before Trapped: 5
+        Sequence Of Rooms: ['room1', 'room2', 'room1', 'room2', 'room1', 'trapped']
     
 Running problem 4...
 
     Problem 4:
-        Sequence Of Weather Patterns: ['sunny', 'sunny', 'sunny', 'sunny', 'sunny', 'sunny', 'sunny', 'sunny', 'partcloudy', 'partcloudy', 'cloudy', 'snowing', 'cloudy', 'cloudy', 'cloudy', 'snowing', 'cloudy', 'sunny', 'sunny', 'sunny', 'sunny', 'sunny', 'sunny', 'sunny', 'sunny', 'sunny', 'partcloudy', 'sunny', 'sunny', 'sunny', 'sunny']
-
-
+        Sequence Of Weather Patterns: ['sunny', 'sunny', 'partcloudy', 'sunny', 'sunny', 'partcloudy', 'partcloudy', 'partcloudy', 'sunny', 'sunny', 'sunny', 'sunny', 'sunny', 'sunny', 'partcloudy', 'partcloudy', 'cloudy', 'snowing', 'cloudy', 'cloudy', 'cloudy', 'snowing', 'cloudy', 'snowing', 'cloudy', 'sunny', 'sunny', 'sunny', 'sunny', 'sunny', 'sunny']
 ```
